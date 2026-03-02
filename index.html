@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CabCast IT Service</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav id="navbar">
+  <a class="logo" href="#">
+    <div class="logo-icon">CC</div>
+    <div class="logo-text">
+      <span class="logo-name">Cab<span>Cast</span></span>
+      <span class="logo-sub">IT Service</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#our-team">Team</a></li>
+    <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" onclick="openMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ── MOBILE MENU ── -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="close-btn" onclick="closeMenu()">✕</button>
+  <a href="#about"    onclick="closeMenu()">About</a>
+  <a href="#services" onclick="closeMenu()">Services</a>
+  <a href="#projects" onclick="closeMenu()">Projects</a>
+  <a href="#our-team" onclick="closeMenu()">Team</a>
+  <a href="#contact"  onclick="closeMenu()">Contact</a>
+</div>
+
+<!-- ── HERO ── -->
+<section id="hero">
+  <div class="hero-blob1"></div>
+  <div class="hero-blob2"></div>
+  <div class="dots-bg"></div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <div class="badge-dot"></div> Open for New Projects
+    </div>
+    <h1 class="hero-title">
+      We Build <span class="highlight">Smart IT Solutions</span><br>
+      That Move Businesses Forward
+    </h1>
+    <p class="hero-sub">
+      CabCast IT Service is a two-developer team crafting modern web apps,
+      mobile solutions, and digital products — built with quality you can count on.
+    </p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn-primary">See Our Work</a>
+      <a href="#contact"  class="btn-outline">Get a Free Quote</a>
+    </div>
+  </div>
+  <div class="hero-scroll">SCROLL <div class="scroll-arrow"></div></div>
+</section>
+
+<!-- ── STATS ── -->
+<section id="stats">
+  <div class="stats-grid">
+    <div class="reveal">
+      <div class="stat-num" data-count="20" data-suffix="+">0</div>
+      <div class="stat-label">Projects Delivered</div>
+    </div>
+    <div class="reveal">
+      <div class="stat-num" data-count="100" data-suffix="%">0</div>
+      <div class="stat-label">Client Satisfaction</div>
+    </div>
+    <div class="reveal">
+      <div class="stat-num" data-count="2" data-suffix="">0</div>
+      <div class="stat-label">Expert Developers</div>
+    </div>
+    <div class="reveal">
+      <div class="stat-num" data-count="3" data-suffix="+">0</div>
+      <div class="stat-label">Years Experience</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── ABOUT ── -->
+<section id="about">
+  <div class="about-grid">
+    <div>
+      <div class="section-tag">Who We Are</div>
+      <h2 class="section-title">Built on Purpose,<br>Powered by Passion</h2>
+      <p class="section-sub">
+        We are CabCast IT Service — two developers united by a shared love for
+        technology and a commitment to delivering solutions that actually work.
+      </p>
+      <div class="mv-cards">
+        <div class="mv-card reveal">
+          <div class="mv-icon blue">🎯</div>
+          <div>
+            <h4>Our Mission</h4>
+            <p>To deliver scalable, high-quality IT solutions that empower businesses to grow and thrive in the digital world.</p>
+          </div>
+        </div>
+        <div class="mv-card reveal">
+          <div class="mv-icon purple">🌟</div>
+          <div>
+            <h4>Our Vision</h4>
+            <p>To become a trusted technology partner for startups and businesses, known for craftsmanship, reliability, and innovation.</p>
+          </div>
+        </div>
+        <div class="mv-card reveal">
+          <div class="mv-icon green">💡</div>
+          <div>
+            <h4>Our Values</h4>
+            <p>Clean code. Honest communication. Continuous learning. Great software is built with both skill and integrity.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about-img-wrap reveal">
+      <div class="about-illustration">🖥️</div>
+      <div class="about-badge">
+        <div class="about-badge-icon">🚀</div>
+        <div>
+          <div class="about-badge-text">Always Delivering</div>
+          <div class="about-badge-sub">On time, every time</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SERVICES ── -->
+<section id="services">
+  <div class="center">
+    <div class="section-tag">What We Do</div>
+    <h2 class="section-title">Our Services</h2>
+    <p class="section-sub">End-to-end IT services crafted to fit your business goals and budget.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <div class="service-icon-wrap">🌐</div>
+      <h3>Web Development</h3>
+      <p>Responsive, fast, and beautiful websites and web apps built with modern frameworks and best practices.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon-wrap">📱</div>
+      <h3>Mobile Applications</h3>
+      <p>Cross-platform mobile apps delivering seamless experiences on both iOS and Android devices.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon-wrap">🛠️</div>
+      <h3>IT Consulting</h3>
+      <p>Technical guidance and strategy to help your business leverage technology for maximum efficiency.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon-wrap">🗄️</div>
+      <h3>Backend &amp; APIs</h3>
+      <p>Robust, scalable server-side solutions and REST APIs powering your applications reliably.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon-wrap">🎨</div>
+      <h3>UI/UX Design</h3>
+      <p>User-centered designs that are intuitive, accessible, and visually compelling across all devices.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon-wrap">☁️</div>
+      <h3>Cloud &amp; Deployment</h3>
+      <p>Cloud hosting, CI/CD pipelines, and deployment configuration for smooth, reliable launches.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROJECTS ── -->
+<section id="projects">
+  <div class="center">
+    <div class="section-tag">Our Work</div>
+    <h2 class="section-title">Featured Projects</h2>
+    <p class="section-sub">A selection of real-world projects built with care and expertise.</p>
+  </div>
+  <div class="projects-grid">
+
+    <div class="project-card reveal">
+      <div class="project-thumb">
+        <div class="overlay" style="background:linear-gradient(135deg,#dbeafe,#bfdbfe)"></div>
+        <div class="thumb-icon">🛒</div>
+      </div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">MongoDB</span>
+        </div>
+        <h3>ShopEase E-Commerce Platform</h3>
+        <p>Full-stack e-commerce with real-time inventory, secure payments, and an admin dashboard.</p>
+        <a href="#" class="project-link">View Project →</a>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-thumb">
+        <div class="overlay" style="background:linear-gradient(135deg,#ede9fe,#ddd6fe)"></div>
+        <div class="thumb-icon">📊</div>
+      </div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="tag">Vue.js</span><span class="tag">Express</span><span class="tag">MySQL</span>
+        </div>
+        <h3>BizTrack Dashboard</h3>
+        <p>Analytics dashboard with live data visualization, KPI tracking, and exportable reports.</p>
+        <a href="#" class="project-link">View Project →</a>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-thumb">
+        <div class="overlay" style="background:linear-gradient(135deg,#dcfce7,#bbf7d0)"></div>
+        <div class="thumb-icon">📅</div>
+      </div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="tag">Flutter</span><span class="tag">Firebase</span><span class="tag">REST API</span>
+        </div>
+        <h3>AppointEase Mobile App</h3>
+        <p>Appointment booking app with push notifications, calendar sync, and SMS reminders.</p>
+        <a href="#" class="project-link">View Project →</a>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-thumb">
+        <div class="overlay" style="background:linear-gradient(135deg,#fef9c3,#fde68a)"></div>
+        <div class="thumb-icon">🏫</div>
+      </div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="tag">Next.js</span><span class="tag">PostgreSQL</span><span class="tag">Tailwind</span>
+        </div>
+        <h3>EduPortal LMS</h3>
+        <p>Learning management system for schools with course management, grading, and student portals.</p>
+        <a href="#" class="project-link">View Project →</a>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-thumb">
+        <div class="overlay" style="background:linear-gradient(135deg,#fce7f3,#fbcfe8)"></div>
+        <div class="thumb-icon">🏢</div>
+      </div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="tag">WordPress</span><span class="tag">PHP</span><span class="tag">SEO</span>
+        </div>
+        <h3>Corporate Website Redesign</h3>
+        <p>Complete redesign for a local firm — boosted site traffic by 200% after launch.</p>
+        <a href="#" class="project-link">View Project →</a>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-thumb">
+        <div class="overlay" style="background:linear-gradient(135deg,#e0f2fe,#bae6fd)"></div>
+        <div class="thumb-icon">🤖</div>
+      </div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">AI</span>
+        </div>
+        <h3>SmartBot Customer Support</h3>
+        <p>AI-powered chatbot with live fallback — reduced support tickets by 60%.</p>
+        <a href="#" class="project-link">View Project →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── TEAM PHOTO SECTION ── -->
+<section id="our-team">
+  <div class="our-team-inner">
+    <div class="center">
+      <div class="section-tag">The People Behind It</div>
+      <h2 class="section-title">Meet the Team</h2>
+      <p class="section-sub">
+        We're a passionate duo turning ideas into digital reality —
+        one line of code at a time.
+      </p>
+    </div>
+
+    <div class="photo-grid">
+
+      <!-- ── DEVELOPER 1 ──
+           📸 TO ADD YOUR PHOTO:
+           1. Save your photo (e.g. "photo1.jpg") in the same folder as index.html
+           2. Delete the <div class="photo-placeholder"> block below
+           3. Replace it with: <img src="photo1.jpg" alt="Your Name">
+      -->
+      <div class="photo-card reveal">
+        <div class="photo-frame">
+          <div class="photo-placeholder">
+            <div class="ph-icon">🧑‍💻</div>
+            <div class="upload-hint">[ Place your photo here ]</div>
+          </div>
+        </div>
+        <div class="photo-info">
+          <h3>Your Name Here</h3>
+          <div class="photo-role">Full-Stack Developer</div>
+          <p class="photo-bio">
+            Passionate about building scalable web applications and clean APIs.
+            Loves turning complex problems into simple, elegant solutions.
+          </p>
+          <div class="skills-row">
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">Python</span>
+          </div>
+          <div class="social-row">
+            <a href="#" class="social-btn" title="GitHub">🐙</a>
+            <a href="#" class="social-btn" title="LinkedIn">💼</a>
+            <a href="#" class="social-btn" title="Email">📧</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── DEVELOPER 2 ──
+           📸 TO ADD YOUR PHOTO:
+           1. Save your photo (e.g. "photo2.jpg") in the same folder as index.html
+           2. Delete the <div class="photo-placeholder"> block below
+           3. Replace it with: <img src="photo2.jpg" alt="Your Name">
+      -->
+      <div class="photo-card reveal">
+        <div class="photo-frame">
+          <div class="photo-placeholder">
+            <div class="ph-icon">🧑‍💻</div>
+            <div class="upload-hint">[ Place your photo here ]</div>
+          </div>
+        </div>
+        <div class="photo-info">
+          <h3>Your Name Here</h3>
+          <div class="photo-role">Frontend &amp; Mobile Dev</div>
+          <p class="photo-bio">
+            UI/UX enthusiast with a sharp eye for design. Specializes in crafting
+            delightful, accessible user experiences across every platform.
+          </p>
+          <div class="skills-row">
+            <span class="skill-tag">Vue.js</span>
+            <span class="skill-tag">Flutter</span>
+            <span class="skill-tag">Firebase</span>
+            <span class="skill-tag">Figma</span>
+          </div>
+          <div class="social-row">
+            <a href="#" class="social-btn" title="GitHub">🐙</a>
+            <a href="#" class="social-btn" title="LinkedIn">💼</a>
+            <a href="#" class="social-btn" title="Email">📧</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact">
+  <div class="contact-wrapper center">
+    <div class="section-tag">Get In Touch</div>
+    <h2 class="section-title">Let's Build Something Together</h2>
+    <p class="section-sub">Have a project in mind? Drop us a message — we respond within 24 hours.</p>
+    <form class="contact-form reveal" onsubmit="handleSubmit(event)">
+      <div class="form-row">
+        <div class="form-group">
+          <label>YOUR NAME</label>
+          <input type="text" placeholder="Juan Dela Cruz" required>
+        </div>
+        <div class="form-group">
+          <label>EMAIL ADDRESS</label>
+          <input type="email" placeholder="you@email.com" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>SUBJECT</label>
+        <input type="text" placeholder="Project Inquiry">
+      </div>
+      <div class="form-group">
+        <label>MESSAGE</label>
+        <textarea placeholder="Tell us about your project, goals, and timeline..."></textarea>
+      </div>
+      <button type="submit" class="btn-primary">Send Message ✉️</button>
+    </form>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-logo-wrap">
+    <div class="footer-logo-icon">CC</div>
+    <div class="footer-logo-name">Cab<span>Cast</span> IT Service</div>
+  </div>
+  <div class="footer-links">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#our-team">Team</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <p>© 2025 CabCast IT Service · Crafted with 💙 by a team of two.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
