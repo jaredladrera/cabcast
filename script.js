@@ -80,7 +80,7 @@ window.addEventListener('scroll', () => {
 function sendMail(e){
     e.preventDefault();
 
-    emailjs.send("service_anskedl","template_7yowdal",{
+    emailjs.send("service_o25244v","template_7yowdal",{
         name: document.getElementById("name").value,
         email: document.getElementById("email").value,
         message: document.getElementById("message").value
