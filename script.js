@@ -1,3 +1,5 @@
+
+
 // ── MOBILE MENU ──
 function openMenu() {
   document.getElementById('mobileMenu').classList.add('open');
@@ -57,15 +59,46 @@ window.addEventListener('scroll', () => {
 });
 
 // ── CONTACT FORM SUBMIT ──
-function handleSubmit(e) {
-  e.preventDefault();
-  const btn = e.target.querySelector('button');
-  const orig = btn.textContent;
-  btn.textContent = '✅ Message Sent!';
-  btn.style.background = '#16a34a';
-  setTimeout(() => {
-    btn.textContent = orig;
-    btn.style.background = '';
-    e.target.reset();
-  }, 3000);
+// function handleSubmit(e) {
+//   e.preventDefault();
+//   const btn = e.target.querySelector('button');
+//   const orig = btn.textContent;
+//   btn.textContent = '✅ Message Sent!';
+//   btn.style.background = '#16a34a';
+//   setTimeout(() => {
+//     btn.textContent = orig;
+//     btn.style.background = '';
+//     e.target.reset();
+//   }, 3000);
+// }
+
+
+(function(){
+   emailjs.init("eTcIFBCqc0N81OG8c");
+})();
+
+function sendMail(e){
+    e.preventDefault();
+
+    emailjs.send("service_anskedl","template_7yowdal",{
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value
+    }).then(function(response){
+
+      const btn = e.target.querySelector('button');
+      const orig = btn.textContent;
+      btn.textContent = '✅ Message Sent!';
+      btn.style.background = '#16a34a';
+      setTimeout(() => {
+        btn.textContent = orig;
+        btn.style.background = '';
+        e.target.reset();
+      }, 3000);
+      alert("Message sent!");
+
+    }, function(error){
+        alert("Failed to send.");
+        console.log("Error : ", error)
+    });
 }

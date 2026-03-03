@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CabCast IT Service</title>
-  <link rel="icon" type="image/png" sizes="16x16" href="logo/ccv2.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="logo/cabcast-no-bg.png">
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -13,7 +13,9 @@
 <!-- ── NAV ── -->
 <nav id="navbar">
   <a class="logo" href="#">
-    <div class="logo-icon">CC</div>
+    <div class="logo-icon">
+      <img src="logo/cabcast-no-bg.png" alt="CabCast"> 
+    </div>
     <div class="logo-text">
       <span class="logo-name">Cab<span>Cast</span></span>
       <span class="logo-sub">IT Service</span>
@@ -315,7 +317,7 @@
             <span class="skill-tag">Mysql</span>
             <span class="skill-tag">Angular</span>
             <span class="skill-tag">Express.js</span>
-            <span class="skill-tag">Express.js</span>
+            <span class="skill-tag">C#</span>
           </div>
           <div class="social-row">
             <a href="https://github.com/jaredladrera" class="social-btn" title="GitHub">🐙</a>
@@ -368,24 +370,24 @@
     <div class="section-tag">Get In Touch</div>
     <h2 class="section-title">Let's Build Something Together</h2>
     <p class="section-sub">Have a project in mind? Drop us a message — we respond within 24 hours.</p>
-    <form class="contact-form reveal" onsubmit="handleSubmit(event)">
+    <form class="contact-form reveal" onsubmit="sendMail(event)">
       <div class="form-row">
         <div class="form-group">
           <label>YOUR NAME</label>
-          <input type="text" placeholder="Juan Dela Cruz" required>
+          <input type="text" placeholder="Juan Dela Cruz" id="name" required>
         </div>
         <div class="form-group">
           <label>EMAIL ADDRESS</label>
-          <input type="email" placeholder="you@email.com" required>
+          <input type="email" placeholder="you@email.com" id="email" required>
         </div>
       </div>
       <div class="form-group">
         <label>SUBJECT</label>
-        <input type="text" placeholder="Project Inquiry">
+        <input type="text" placeholder="Project Inquiry" id="subject">
       </div>
       <div class="form-group">
         <label>MESSAGE</label>
-        <textarea placeholder="Tell us about your project, goals, and timeline..."></textarea>
+        <textarea placeholder="Tell us about your project, goals, and timeline..." id="message"></textarea>
       </div>
       <button type="submit" class="btn-primary">Send Message ✉️</button>
     </form>
@@ -395,7 +397,9 @@
 <!-- ── FOOTER ── -->
 <footer>
   <div class="footer-logo-wrap">
-    <div class="footer-logo-icon">CC</div>
+    <div class="footer-logo-icon">
+      <img src="logo/cabcast-no-bg.png" alt="CabCast Logo">
+    </div>
     <div class="footer-logo-name">Cab<span>Cast</span> IT Service</div>
   </div>
   <div class="footer-links">
@@ -405,9 +409,11 @@
     <a href="#our-team">Team</a>
     <a href="#contact">Contact</a>
   </div>
-  <p>© 2025 CabCast IT Service · Crafted with 💙 by a team of two.</p>
+  <p>© 2026 CabCast IT Service · Crafted with 💙 by a team of two.</p>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
+
